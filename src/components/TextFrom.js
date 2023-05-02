@@ -15,10 +15,15 @@ export default function TextFrom(props) {
     setText(newText);
   }
 
+  const handleClearClick = () =>{
+    setText("");
+  }
+
   const onChange =(event)=>{
     console.log("On change");
     setText(event.target.value);
   }
+
   return (
     <>
     <div className="container">
@@ -28,12 +33,13 @@ export default function TextFrom(props) {
         <textarea className="form-control" value={text} onChange={onChange} id="myBox" placeholder="Enter text here" rows="10"></textarea>
       </div>
       <button className="btn btn-primary" onClick={handleUpClick}>Convert to Uppercase</button>
-      <button className=" mx-3 btn btn-primary" onClick={handleLwClick}>Convert to Lowercase</button>
+      <button className=" mx-1 btn btn-primary" onClick={handleLwClick}>Convert to Lowercase</button>
+      <button className=" mx-1 btn btn-success" onClick={handleClearClick}>Clear</button>
     </div>
     <div className="container my-3">
       <h2>Your text summary</h2>
       <p>{text.split(" ").length} words, {text.length} character</p>
-      <p>{0.008 *text.split(" ").length } Minutes read</p>
+      <p>{0.008 *text.split(" ").length} Minutes read</p>
       <h2>Preview</h2>
       <p>{text}</p>
     </div>
