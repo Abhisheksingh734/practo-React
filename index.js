@@ -120,13 +120,21 @@
 
 // console.log(hasTwo)
 
-const nums = [10,20,30,40,50]
-.map(num=>num*2)
-.filter(num=>num>50)
+// const nums = [10,20,30,40,50]
+// .map(num=>num*2)
+// .filter(num=>num>50)
 
 // const timesTwo = nums.map(num=>num*2);
 
 // const over50 = timesTwo.filter(num=>num>50);
-console.log(nums)
+// console.log(nums)
 // console.log(timesTwo)
 // console.log(over50)
+
+const nums = [5,10,15,20,25,30,35];
+
+const sum2 = nums.reduce((result,num)=>{
+    return result+num;
+},0)
+
+console.log(sum2);
