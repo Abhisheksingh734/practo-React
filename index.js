@@ -42,13 +42,62 @@
 // arr.pop();
 // console.log(arr);
 
-let multiple = 5;
-let arr = [10,11,12,13,14,15];
+// let multiple = 5;
+// let arr = [10,11,12,13,14,15];
 
-for(let i=0;i<arr.length;i++){
-    console.log(`${arr[i]} X ${multiple} = ${arr[i]*multiple}`);
-}
+// for(let i=0;i<arr.length;i++){
+//     console.log(`${arr[i]} X ${multiple} = ${arr[i]*multiple}`);
+// }
 
 // for(let i of arr) {
 //     console.log(`${i} x ${multiple} = ${i*multiple}`);
 // }
+
+// let bools = [true,true,false,true,false,false]
+
+// let newArr = bools.map((bool)=>{
+//     if(bool===true){
+//         return Math.ceil(Math.random()*10);
+//     }else{
+//         return 0
+//     }
+// })
+// console.log(bools);
+// console.log(newArr);
+
+
+// const prices= [1.23, 19.99, 85.2, 32.87, 8, 5.2]
+// let taxedPrices = prices.map((price)=>{
+//     if(price>10){
+//         return price+(price/5)
+//     }
+//     return price;
+// })
+// console.log(prices);
+// console.log(taxedPrices);
+
+// const items =["light", "banana","phone","book","mouse"]
+
+// let plural = items.map((item)=>{
+//     if(item==="mouse")
+//     return "mice";
+//     return item+'s';
+// })
+// console.log(items);
+// console.log(plural)
+
+// let row = [10,20,30,40,50]
+
+// let matrix = row.map((ele)=>{
+//     ele = [ele]
+//     return ele
+// })
+// console.log(matrix)
+
+
+const practice =[10,11,12,13,14,15,16,17,18,19,20];
+
+const filterArr = practice.filter(num=>num%2===0);
+
+console.log(practice);
+console.log(filterArr);
