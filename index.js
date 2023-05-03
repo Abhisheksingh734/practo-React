@@ -95,9 +95,38 @@
 // console.log(matrix)
 
 
-const practice =[10,11,12,13,14,15,16,17,18,19,20];
+// const practice =[10,11,12,13,14,15,16,17,18,19,20];
 
-const filterArr = practice.filter(num=>num%2===0);
+// const filterArr = practice.filter(num=>num%2===0);
 
-console.log(practice);
-console.log(filterArr);
+// console.log(practice);
+// console.log(filterArr);
+
+
+// const countries = ["France", "South Africa", "United States", "Brazil", "Sweden"];
+
+// const newCountries = countries.filter(country=>country.includes(" "))
+
+// console.log(newCountries)
+
+
+// const values = [[1,2,3],[0,0,1],[3,6,9],[0,1,2]];
+
+// const hasTwo = values.filter((value)=>{
+//     if(value.includes(2)){
+//         return true;
+//     }
+// })
+
+// console.log(hasTwo)
+
+const nums = [10,20,30,40,50]
+.map(num=>num*2)
+.filter(num=>num>50)
+
+// const timesTwo = nums.map(num=>num*2);
+
+// const over50 = timesTwo.filter(num=>num>50);
+console.log(nums)
+// console.log(timesTwo)
+// console.log(over50)
