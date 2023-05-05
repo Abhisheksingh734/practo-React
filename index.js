@@ -131,10 +131,18 @@
 // console.log(timesTwo)
 // console.log(over50)
 
-const nums = [5,10,15,20,25,30,35];
 
-const sum2 = nums.reduce((result,num)=>{
-    return result+num;
+// find sum using reduce method
+const practice =[10,11,12,13,14,15,16,17,18,19,20];
+
+const sum = practice.reduce((result,item) => {
+    console.log(result,item);
+    return result + item;
 },0)
 
-console.log(sum2);
+console.log(sum);
+
+
+
+
+
