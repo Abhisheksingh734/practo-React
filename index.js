@@ -140,7 +140,6 @@ const sum = practice.reduce((result,item) => {
     return result + item;
 },0)
 
-console.log(sum);
 
 
 
