@@ -133,15 +133,28 @@
 
 
 // find sum using reduce method
-const practice =[10,11,12,13,14,15,16,17,18,19,20];
+// const practice =[10,11,12,13,14,15,16,17,18,19,20];
 
-const sum = practice.reduce((result,item) => {
-    console.log(result,item);
-    return result + item;
-},0)
-
-
+// const sum = practice.reduce((result,item) => {
+//     console.log(result,item);
+//     return result + item;
+// },0)
 
 
+
+let myMap = new Map();
+myMap.set(1,"Uno");
+myMap.set(2,"Dos");
+myMap.set(3,"Tres");
+myMap.set(4,"Cuatro");
+console.log(myMap);
+
+
+
+myMap.forEach((value,key)=>{
+    console.log(key,value);
+
+}
+)
 
 
