@@ -141,20 +141,142 @@
 // },0)
 
 
+// const myMap = new Map();
+// console.log(myMap);
 
-let myMap = new Map();
-myMap.set(1,"Uno");
-myMap.set(2,"Dos");
-myMap.set(3,"Tres");
-myMap.set(4,"Cuatro");
-console.log(myMap);
+// myMap.set("name","Abhishek");
+// myMap.set("age",19);
+
+// console.log(myMap.values());
+
+// console.log(myMap.size);
+
+// console.log(myMap.delete("age"));
+// console.log(myMap.size)
+
+// myMap.set(["name","hello"],["abhu","abhishek","abhi"]);
+// console.log(myMap);
+
+
+// const mexico = new Map();
+
+// mexico.set("id",24);
+// mexico.set("name","Mexico");
+// mexico.set("capital","Mexico City");
+// mexico.set("neighbours",["USA","Guatemala","Belize"]);
+
+// console.log(mexico);
+// mexico.set("id",25);
+// console.log(mexico);
+
+// mexico.get("neighbours").push("Honduras");
+
+// console.log(mexico);
+
+// const banana = {name : "banana", quantity: 1, price: 1.95}
+// const apple = {name : "apple", quantity: 1, price: 1.45}
+// const candy = {name : "candy", quantity: 1, price: 3.50}
+
+// const store = new Map();
+
+// store.set("storeNumber",5)
+// store.set("lacationCity","Milan")
+// store.set("lacationCountry","Italy")
+// store.set("products",[banana,apple,candy])
+
+// console.log(store.get("products"));
+// console.log(store.get("products")[2]);
+// store.get("products")[0]["price"]= 1.75
+
+// console.log(store , banana);
+// candy.price = 4.9
+// console.log(store, candy);
 
 
 
-myMap.forEach((value,key)=>{
-    console.log(key,value);
+// const houseForSale = new Map();
 
-}
-)
+// houseForSale.set("area",90);
+// houseForSale.set("Value",320000);
+// houseForSale.set("streetName","Fifth Street");
+// houseForSale.set("built","2012");
+// houseForSale.set("owner",{name: "Blake",age:29});
+// houseForSale.set("offer",[290000,295000,315000,312000]);
+
+// console.log(houseForSale);
+
+// houseForSale.delete("built");
+// console.log(houseForSale);
+
+
+// const newF = houseForSale.get("offer").reduce((result,price)=> {
+//     if(result>price) return result;
+//     else return price
+// },0)
+// console.log(newF);
+
+// houseForSale.set("sale price", 312000);
+// console.log(houseForSale);
+
+
+
+// const myConsole = new Map();
+
+// myConsole.set("log",(message)=>{console.log(message)})
+
+// myConsole.get("log")("What's upp");
+
+
+// myConsole.set(1,"number one");
+// myConsole.set("1","string one");
+
+// console.log(myConsole.get(1));
+// console.log(myConsole.get("1"));
+
+
+// console.log(myConsole);
+
+
+
+
+
+
+
+
+//------------------------------------- THE  BEST  QUESTION-------------------------------------------------------------------------
+
+
+
+// const numbers = [10, 20, 15 ,30, 15, 20, 35 ,60, 10]
+
+/*
+find the duplicate value in "numbers" and prnint out the index
+of that value as well as the index of where it was first found in "numbers"
+*/
+
+
+// const map = new Map();
+// const dup = new Map();
+// let dup = [];
+// numbers.forEach((value,index)=>{
+//     if(map.has(value)) {
+//      console.log(index,map.get(value));
+//     } else{
+//         map.set(value,index);
+//     }
+// });
+// for(let i = 0; i< numbers.length;i++){
+//     if(map.has(numbers[i])){
+//         console.log(i,map.get(numbers[i]));
+//         break;
+//     }else{
+//         map.set(numbers[i],i)
+//     }
+// }
+
+// console.log(map);
+// console.log(map);
+
+
 
 
